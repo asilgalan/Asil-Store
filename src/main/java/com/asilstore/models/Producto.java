@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 @Table(name = "productos")
-public abstract class Producto {
+public  class Producto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,6 +23,7 @@ public abstract class Producto {
     private String color;
     private Long stock;
     private String marca;
+    private String imagen;
 
 
     @ManyToOne

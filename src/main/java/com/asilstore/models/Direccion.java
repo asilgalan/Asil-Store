@@ -16,6 +16,7 @@ public class Direccion {
     private Long id;
     private String calle;
     private String ciudad;
+    private int cp;
 
     @ManyToOne
     private Cliente cliente;

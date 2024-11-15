@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
 import java.util.List;
 @Entity
 @NoArgsConstructor
@@ -16,7 +17,11 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
+    private String apellido;
+    @Column(name = "fecha_nac")
+    private Date fechaNac;
     private String email;
+    private String password;
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Direccion> direccion;
@@ -24,8 +29,6 @@ public class Cliente {
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<Pedido> pedidos;
 
-    // Getters y setters
-    // Constructor
-    // Método para realizar pedido
+
 
 }

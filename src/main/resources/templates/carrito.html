@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Mi Tienda</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<!-- Barra de navegación -->
+<header>
+    <div class="navbar">
+        <h1 class="logo">MiTienda</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Productos</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Carrito -->
+<section class="carrito">
+    <h2>Tu Carrito</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+            <th>Eliminar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Producto 1</td>
+            <td>$10</td>
+            <td>1</td>
+            <td>$10</td>
+            <td><button>Eliminar</button></td>
+        </tr>
+        <tr>
+            <td>Producto 2</td>
+            <td>$20</td>
+            <td>2</td>
+            <td>$40</td>
+            <td><button>Eliminar</button></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="total">
+        <p>Total: $50</p>
+        <a href="pago.html">Preoceder al Pago</a>
+    </div>
+</section>
+
+<!-- Pie de página -->
+<footer>
+    <p>&copy; 2024 MiTienda. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

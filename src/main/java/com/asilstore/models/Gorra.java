@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "gorras")
+
 public class Gorra extends Producto{
 
     private String tipo;
